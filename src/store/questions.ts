@@ -13,12 +13,7 @@ interface State {
   reset: () => void;
 }
 
-let API_URL;
-if (window.location.hostname === "cesar-js-quizz.surge.sh") {
-  API_URL = "http://cesar-js-quizz.surge.sh/";
-} else {
-  API_URL = "http://localhost:5173/";
-}
+const API_URL = "http://cesar-js-quizz.surge.sh/" || "http://localhost:5173/";
 
 export const useQuestionsStore = create<State>()(
   devtools(
