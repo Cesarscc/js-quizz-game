@@ -10,6 +10,7 @@ interface State {
   selectAnswer: (questionId: number, answerIndex: number) => void;
   goNextQuestion: () => void;
   goPreviousQuestion: () => void;
+  reset: () => void;
 }
 
 let API_URL;
