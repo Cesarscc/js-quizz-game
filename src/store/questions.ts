@@ -12,9 +12,12 @@ interface State {
   goPreviousQuestion: () => void;
 }
 
-const API_URL = import.meta.env.PROD
-  ? "http://cesar-scc-js-quizz.surge.sh/"
-  : "http://localhost:5173/";
+let API_URL;
+if (window.location.hostname === "cesar-js-quizz.surge.sh") {
+  API_URL = "http://cesar-js-quizz.surge.sh/";
+} else {
+  API_URL = "http://localhost:5173/";
+}
 
 export const useQuestionsStore = create<State>()(
   devtools(
