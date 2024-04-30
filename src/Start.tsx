@@ -12,7 +12,7 @@ export const Start = () => {
     }
 
     return (
-        <Button onClick={handleClick} variant="contained">¡Empezar!</Button>
+        <Button sx={{ marginTop: '25px' }} onClick={handleClick} variant="contained">¡Empezar!</Button>
     )
 
 }

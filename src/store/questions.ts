@@ -13,8 +13,13 @@ interface State {
   reset: () => void;
 }
 
-const API_URL =
-  "https://cesarscc-js-quizz-game.netlify.app/" || "http://localhost:5173/";
+let API_URL = "";
+
+if (window.location.hostname === "cesarscc-js-quizz-game.netlify.app") {
+  API_URL = "https://cesarscc-js-quizz-game.netlify.app/";
+} else {
+  API_URL = "http://localhost:5173/";
+}
 
 export const useQuestionsStore = create<State>()(
   devtools(
