@@ -13,7 +13,8 @@ interface State {
   reset: () => void;
 }
 
-const API_URL = "http://cesar-js-quizz.surge.sh/" || "http://localhost:5173/";
+const API_URL =
+  "https://cesarscc-js-quizz-game.netlify.app" || "http://localhost:5173/";
 
 export const useQuestionsStore = create<State>()(
   devtools(
