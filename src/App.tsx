@@ -13,7 +13,7 @@ function App() {
       <Container maxWidth='sm'>
         <Stack direction={'row'} gap={2} alignItems={'center'} justifyContent={'center'}>
           <JavaScriptLogo />
-          <Typography variant='h2' component='h1'>
+          <Typography variant='h4' component='h4'>
             Javascript Quizz
           </Typography>
         </Stack>
