@@ -14,7 +14,7 @@ interface State {
 }
 
 const API_URL =
-  "https://cesarscc-js-quizz-game.netlify.app" || "http://localhost:5173/";
+  "https://cesarscc-js-quizz-game.netlify.app/" || "http://localhost:5173/";
 
 export const useQuestionsStore = create<State>()(
   devtools(
