@@ -10,7 +10,7 @@ function App() {
   const questions = useQuestionsStore(state => state.questions);
   return (
     <main>
-      <Container maxWidth='sm'>
+      <Container maxWidth='sm' sx={{ placeContent: 'center', minHeight: '100vh' }}>
         <Stack direction={'row'} gap={2} alignItems={'center'} justifyContent={'center'}>
           <JavaScriptLogo />
           <Typography variant='h4' component='h4'>

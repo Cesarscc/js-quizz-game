@@ -43,7 +43,6 @@ const Question = ({ info }: { info: QuestionType }) => {
             <Typography variant="h5">
                 {info.question}
             </Typography>
-
             <SyntaxHighLighter language='Javascript' style={gradientDark}>
                 {info.code}
             </SyntaxHighLighter>
